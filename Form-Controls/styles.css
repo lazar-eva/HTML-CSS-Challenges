@@ -4,9 +4,11 @@
 
 body {
     background-color: aliceblue;
+    position: relative;
 }
 h1 {
     text-align: center;
+    color: rgb(23, 42, 82);
 }
 
 main {
@@ -93,4 +95,16 @@ input[type=date] {
     justify-content: center;
     margin: 1.5rem;
 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+}
+
+footer p {
+    margin: auto;
+    color: rgb(23, 42, 82);
+    font-weight: 200;
 }
