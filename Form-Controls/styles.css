@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    min-width: 30rem;
+    padding: 2rem;
+    margin: 3rem;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+input[type=text], 
+input[type=email],
+input[type=date] {
+    padding:10px;
+    border: none;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.text-field {
+
+    width: 60%;
+}
+
+.pick-size {
+    width: 4rem;
+    height: 2rem;
+    font-size: 1rem;
+    border: 1px solid #999;
+
+}
+.color {
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.margin-left {
+    margin-left: 1.5rem;
+}
+
+.rounded-input {
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+.sbm-btn {
+    background-color: rgb(23, 42, 82);
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sbm-btn:active,
+.sbm-btn:hover {
+    background-color: rgb(41, 70, 134);
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <div class="name flex">
+        <label for="username">Full Name</label>
+        <input class="text-field rounded-input" id="username" type="text" minlength="2" name="username" required>
+      </div>
+
+      <div class="email flex">
+        <label for="email">Email</label>
+        <input class="text-field rounded-input" id="email" type="email" required>
+      </div>
+      <div>
+        <fieldset class="color flex">
+          <legend>Choose the color</legend>
+          <div>
+            <label for="white">White</label>
+            <input id="white" type="radio" name="color" value="white" required>
+          </div>
+
+          <div>
+            <label for="black">Black</label>
+            <input id="black" type="radio" name="color" value="black" required>
+          </div>
+
+          <div>
+
+            <label for="red">Red</label>
+            <input id="red" type="radio" name="color" value="red" required>
+          </div>
+        </fieldset>
+      </div>
+      <div class="size">
+        <label for="size">Pick your size</label>
+        <select name="size" id="size" class="pick-size margin-left">
+          <option value="xs" selected>XS</option>
+          <option value="x">X</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </div>
+      <div class="date">
+        <label for="date">Delivery date (next 4 weeks)</label>
+        <input type="date" class="rounded-input margin-left" name="date" id="date" value="2023-01-28" min="2023-01-28" max="2023-02-28">
+      </div>
+      <div class="btn-container">
+        <button type="submit" class="sbm-btn">Submit</button>
+      </div>
+
+
+
+    </form>
 
   </main>
   <footer>
